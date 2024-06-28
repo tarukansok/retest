@@ -18,7 +18,6 @@ jobs:
       - name: Install Dependencies
         uses: actions/setup-node@v4
       - name: run
-        run:  |
-            run run js ${{ matrix.rangeIndex }}
+        run:  node run js ${{ matrix.rangeIndex }}
       - name: done
         run: exit
